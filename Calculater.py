@@ -7,27 +7,30 @@ print("3. Multiply")
 print("4. Divide")
 print("5. Modulus")
 operation= input()
-if operation == "1":
- num1=int(input("enter your first number:"))
- num2=int(input("enter your second number:"))
- print("the sum is" + str (int(num1)+int(num2)))
-elif operation =="2":
+try:
+   if operation == "1":
+    num1=int(input("enter your first number:"))
+    num2=int(input("enter your second number:"))
+    print("the sum is" + str (int(num1)+int(num2)))
+   elif operation =="2":
      num1=int(input("enter your first number:"))
      num2=int(input("enter your second number:"))
      print("the subtract is" + str (int(num1)-int(num2)))
-elif operation == "3":
+   elif operation == "3":
      num1=int(input("enter your first number:"))
      num2=int(input("enter your second number:"))
      print("the Multiply is" + str (int(num1)*int(num2)))
-elif operation=="4":
+   elif operation=="4":
      num1=int(input("enter your first number:"))
      num2=int(input("enter your second number:"))
      print("the divide is" + str (int(num1)/int(num2)))
-elif operation=="5":
+   elif operation=="5":
      num1=int(input("enter your first number:"))
      num2=int(input("enter your second number:"))
      print("the Modulus is" + str (int(num1)%int(num2)))    
-else:
+   else:
     print("Invalid Entry")
-
-
+except ValueError:
+         print("value error") 
+      
+ 
